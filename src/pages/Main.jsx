@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Selector from '../base/Selector'
 import Navbar from '../components/Navbar'
 import Seo from '../base/Seo'
 import { connect } from 'react-redux'
+import * as menuActions from '../actions/menuAction'
 
 
 const Main = props => {
     const { opciones } = props
+    console.log(props)
 
     return(
         <div className="main">
@@ -32,4 +34,4 @@ const mapStateToProps = (reducers) => {
     return reducers.menuReducer
 }
 
-export default connect(mapStateToProps, {/* actions */} )(Main)
+export default connect(mapStateToProps, menuActions )(Main)
