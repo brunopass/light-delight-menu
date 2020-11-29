@@ -1,0 +1,18 @@
+$green-color: #45A584;
+$yellow-color: #E4BC14;
+$orange-color: #F07843;
+$red-color: #F04343;
+
+$white: #fff;
+$white-background: #f7f8f9;
+$background: #FBEDB2;
+
+$black: #161614;
+$dark-gray: #23221F;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100&display=swap');
+$principal-font: 'Roboto';
+$secondary-font: sans-serif;
+@mixin font-family {
+  font-family: $principal-font, $secondary-font;
+}

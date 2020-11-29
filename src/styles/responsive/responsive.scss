@@ -1,0 +1,79 @@
+@import '../variables';
+
+@media screen and (max-width: 600px){
+    .selector{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main__container{
+        grid-template-columns: 250px 250px;
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 500px){
+        .selector{
+            width: 200px;
+            height: 200px;
+        }
+    
+        .main__container{
+            grid-template-columns: 200px 200px;
+            gap: 20px;
+        }
+
+        .selector img{
+            height: 50px;
+            width: 50px;
+        }
+        
+        .selector h3{
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 400px){
+            .selector{
+                width: 150px;
+                height: 150px;
+            }
+        
+            .main__container{
+                grid-template-columns: 150px 150px;
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 310px){
+            .selector{
+                width: 125px;
+                height: 125px;
+            }
+        
+            .main__container{
+                grid-template-columns: 125px 125px;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 250px){
+            .selector{
+                width: 90px;
+                height: 90px;
+            }
+        
+            .main__container{
+                grid-template-columns: 90px 90px;
+                gap: 10px;
+            }
+
+            .selector img{
+                height: 35px;
+                width: 35px;
+            }
+            
+            .selector h3{
+                font-size: 15px;
+            }
+        }
+    }
+}

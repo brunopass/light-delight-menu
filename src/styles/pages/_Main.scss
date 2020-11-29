@@ -1,0 +1,32 @@
+@import '../variables';
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;   
+}
+
+.main__holder{
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+.main__holder h1{
+    margin: 50px 0;
+    color: $dark-gray;
+}
+
+.main__container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
