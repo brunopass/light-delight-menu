@@ -158,6 +158,11 @@
   color: #23221F;
 }
 
+.navbar__container div {
+  height: 50px;
+  width: 50px;
+}
+
 @media screen and (max-width: 600px) {
   .selector {
     width: 250px;

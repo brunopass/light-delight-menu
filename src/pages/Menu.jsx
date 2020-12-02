@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import * as menuItemsAction from '../actions/menuItemsAction'
+import Navbar from '../components/Navbar'
 
 const Menu = props => {
 
@@ -12,6 +13,7 @@ const Menu = props => {
 
     return(
         <div>
+            <Navbar/>
 
         </div>
     )

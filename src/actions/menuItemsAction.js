@@ -12,13 +12,19 @@ export const GetMenuItemsAction = ( opcion ) => async(dispatch) => {
 
         dispatch({
             type: types.traerItems,
-            payload: data
+            payload: {
+                items: data,
+                title: opcion
+            }
         })
     }
     catch{
         dispatch({
             type: types.traerItems,
-            payload: eval(`require('../baseMenu.json').${opcion}`)
+            payload: { 
+                items: eval(`require('../baseMenu.json').${opcion}`),
+                title: opcion
+            }
         })
     }
 }

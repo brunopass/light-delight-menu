@@ -20,7 +20,8 @@ export default (state = initialState, action) => {
                 ...state,
                 error: false, 
                 loading: false,
-                items: action.payload
+                items: action.payload.items,
+                title: action.payload.title
             }
 
         default:

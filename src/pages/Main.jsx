@@ -14,6 +14,7 @@ const Main = props => {
 
     return(
         <div className="main">
+            <Navbar location={props.match}/>
             <Seo color="#45A584" title="Bienvenido - Light Delight Adrogue"/>
 
             <div className="main__holder">
