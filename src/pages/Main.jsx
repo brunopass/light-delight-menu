@@ -15,7 +15,6 @@ const Main = props => {
     return(
         <div className="main">
             <Seo color="#45A584" title="Bienvenido - Light Delight Adrogue"/>
-            <Navbar/>
 
             <div className="main__holder">
 
