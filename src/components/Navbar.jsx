@@ -19,18 +19,16 @@ const Navbar = props => {
             )
         }
     }catch{
-    }
-
-    return(
-        <div className="navbar">
-            <div className="navbar__container">
-                <img alt="logo"/>
-                <h3>{title}</h3>
-                <div></div>
+        return(
+            <div className="navbar">
+                <div className="navbar__container">
+                    <img alt="logo"/>
+                    <h3>{title}</h3>
+                    <div></div>
+                </div>
             </div>
-        </div>
-    )
-
+        )
+    }
 }
 
 const mapStateToProps = reducers => reducers.itemsReducer
