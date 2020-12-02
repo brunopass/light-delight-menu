@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Selector = props => {
 
     const {img, title, link, key} = props
-
+    
     return(
         <Link to={link} key={key} style={{textDecoration: 'none'}}>
             <div className="selector">

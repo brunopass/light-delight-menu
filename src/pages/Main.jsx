@@ -5,10 +5,12 @@ import Seo from '../base/Seo'
 import { connect } from 'react-redux'
 import * as menuActions from '../actions/menuAction'
 
-
 const Main = props => {
-    const { opciones } = props
+    const { opciones, GetOpciones } = props
     console.log(props)
+    useEffect(()=>{
+        GetOpciones()
+    },[])
 
     return(
         <div className="main">
